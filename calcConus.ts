@@ -82,6 +82,7 @@ function calculateFreeCADHelixLength(params: ConeHelixParams): number {
         throw new Error('Радиус, шаг и высота должны быть больше 0');
     }
 
+
     // Если угол 0, считаем по стандартной формуле цилиндра (Теорема Пифагора)
     if (angleDeg === 0) {
         const turns = height / pitch;
